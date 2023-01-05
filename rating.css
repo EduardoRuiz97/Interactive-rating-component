@@ -1,0 +1,177 @@
+*{
+  border: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsla(217, 12%, 63%, 0.301);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--VeryDarkBlue);
+  font-size: 15px;
+
+}
+
+.rateSection {
+  max-width: 330px;
+  max-height: 365px;
+  margin: 35% auto;
+  border-radius: 20px;
+  background-color: var(--DarkBlue);
+  padding: 20px;
+}
+
+.dissapear {
+  display: none;
+}
+
+.rateSection figure {
+  margin: 0px;
+  background-color: var(--LightGrey);
+  border-radius: 50%;
+  width: 33px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rateSection figure img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.rateSection h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.rateSection p {
+  color: var(--MediumGrey);
+}
+
+.rateValue {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.ratebut {
+  background-color: var(--LightGrey);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--MediumGrey);
+}
+
+.ratebut:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.ratebut:focus{
+  background-color: var(--Orange);
+  color: white;
+}
+
+
+.submit {
+  width: 100%;
+  height: 40px;
+  background-color: var(--Orange);
+  color: white;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit:active {
+  background-color: white;
+  color: var(--Orange);
+}
+
+/*-----Second Card */
+
+.thanksSection {
+  max-width: 330px;
+  max-height: 365px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: var(--DarkBlue);
+  padding: 20px;
+  margin: 35% auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.show {
+  display: flex;
+}
+
+.thank-img {
+  max-width: 150px;
+  max-height: 95px;
+}
+
+#resultRate {
+  background-color: var(--LightGrey);
+  color: var(--Orange);
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.h1thank {
+  margin: 5px 0px;
+  color: white;
+}
+
+.thankP {
+  margin-bottom: 15px;
+  color: var(--MediumGrey);
+  text-align: center;
+}
+
+
+/*--------Footer-----------*/
+
+.attribution { 
+  font-size: 13px; 
+  text-align: center; 
+  color: hsl(0, 0%, 100%); 
+}
+
+.attribution a { 
+  color: hsl(0, 0%, 100%); 
+  text-decoration: underline;
+}
+
+
+/*----Media Queries----*/
+
+@media only screen and (min-width:600px) and (min-height:800px) {
+  .rateSection {
+    margin: 15% auto;
+  }
+
+  .thanksSection {
+    margin: 15% auto;
+  }
+}
